@@ -1,0 +1,17 @@
+sudo docker images
+sudo docker run -d --name web1 -p 8800:80 amonsalve/parcial_final
+sudo docker build -t amonsalve/parcial .
+sudo docker compose up -d
+
+
+#cuales están corriendo
+sudo docker ps
+sudo docker compose ps
+
+#listar
+sudo docker container ls -a
+
+sudo docker container stop 71b95a509905
+sudo docker container rm 71b95a509905
+
+sudo docker compose down
